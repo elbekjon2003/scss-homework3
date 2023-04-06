@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.calc{
+    padding: 100px 0;
+    background-color: $lightbrown;
+    margin-top: -205px;
+    .calc-main{
+        display: flex;
+        justify-content: space-evenly;
+        @media(max-width:900px){
+            flex-direction: column;
+            // align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+        .calc-card{
+            color: #fff;
+            @media(max-width:900px){
+                width: 100%;
+            }
+            h1{
+                font-size: 96px;
+                @media(max-width:400px){
+                    font-size: 60px;
+                }
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import "./variables.scss";
+.footer-main{
+    padding: 100px 0;
+    text-align: center;
+    img{
+        width: 120px;
+    }
+    .footer-icons{
+        margin-top: 20px;
+        a{
+            font-size: 25px;
+            &:nth-of-type(2){
+                margin: 0 20px;
+            }
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        color: #B1B1B1;
+        margin-top: 20px;
+        a{
+            color: #666666;
+        }
+    }
+}

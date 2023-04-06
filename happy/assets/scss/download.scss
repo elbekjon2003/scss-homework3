@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.download{
+    padding: 100px 0;
+    background-color: #fff;
+    margin-top: -450px;
+}
+.download-main{
+    text-align: center;
+    h3{
+        font-size: 14px;
+        line-height: 20px; 
+    }
+    h1{
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 6px;
+    }
+    p{
+        width: 590px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 14px;
+        @media(max-width:700px){
+            width: auto;
+        }
+    }
+    img{
+        width: 180px;
+        margin-top: 28px;
+    }
+}

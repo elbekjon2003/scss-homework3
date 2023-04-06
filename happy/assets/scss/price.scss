@@ -1,0 +1,95 @@
+@import "./variables.scss";
+
+.price{
+    transform: translateY(-450px);
+    background-color: #fff;
+}
+.price-main{
+    padding: 100px 0;
+    text-align: center;
+    &>h4{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &>h1{
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 6px;
+    }
+    &>p{
+        width: 570px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 14px;
+        @media(max-width: 600px){
+            width: auto;
+        }
+    }
+    .price-cards{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media(max-width:800px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .price-card{
+            width: 380px;
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            padding: 50px;
+            color: $blue;
+            &:nth-of-type(2){
+                color: $lightbrown;
+                button{
+                    background-color: $lightbrown;
+                }
+            }
+            &:nth-of-type(3){
+                color: $yellow;
+                button{
+                    background-color: $yellow;
+                }
+            }
+            @media(max-width:1050px){
+                padding: 20px;
+            }
+            @media(max-width:500px){
+                width: 280px;
+            }
+            @media(max-width:350px){
+                width: 240px;
+            }
+            h3{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            h1{
+                font-size: 108px;
+                line-height: 124px;
+                @media(max-width: 350px){
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+            }
+            p{
+                color: $black;
+                margin-top: 25px;
+            }
+            button{
+                padding: 10px 25px;
+                color: #fff;
+                background-color: $blue;
+                border: none;
+                border-radius: 4px;
+                margin-top: 20px;
+                transition: 0.4s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import "./variables.scss";
+
+.features{
+    background-color: $black;
+    color: #fff;
+    transform: translateY(-205px);
+    z-index: 100;
+}
+.feature-main{
+    padding: 100px 0;
+    text-align: center;
+    &>p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &>h1{
+        font-size: 32px;
+        line-height: 36px;
+        width: 500px;
+        margin: auto;
+        margin-top: 8px;
+        @media(max-width:550px){
+            width: auto;
+        }
+    }
+    .feature-cards{
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        .feature-card{
+            background-color: #fff;
+            width: 380px;
+            height: 490px;
+            position: relative;
+            border-radius: 20px;
+            img{
+                width: 227px;
+                margin-top: 40px;
+            }
+            .card-desc{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: #f2f2f2;
+                padding: 40px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                .icon{
+                    width: 64px;
+                    height: 64px;
+                    background-color: $blue;
+                    color: #fff;
+                    display: grid;
+                    place-items: center;
+                    margin: auto;
+                    margin-top: -70px;
+                }
+                h3{
+                    color: $blue;
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-top: 14px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 22px;
+                    margin-top: 11px;
+                    color: $black;
+                }
+            }
+            &:nth-of-type(2){
+                .icon{
+                    background-color: $lightbrown;
+                }
+                h3{
+                    color: $lightbrown;
+                }
+            }
+            &:nth-of-type(3){
+                .icon{
+                    background-color: $yellow;
+                }
+                h3{
+                    color: $yellow;
+                }
+            }
+            &:nth-of-type(4){
+                .icon{
+                    background-color: $pink;
+                }
+                h3{
+                    color: $pink;
+                }
+            }
+            &:nth-of-type(5){
+                .icon{
+                    background-color: $lightblue;
+                }
+                h3{
+                    color: $lightblue;
+                }
+            }
+            &:nth-of-type(6){
+                .icon{
+                    background-color: $purple;
+                }
+                h3{
+                    color: $purple;
+                }
+            }
+        }
+    }
+}

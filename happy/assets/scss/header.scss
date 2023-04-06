@@ -1,0 +1,82 @@
+@import "./variables.scss";
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 25px 0;
+    position: relative;
+    .logo{
+        width: 120px;
+    }
+    label{
+        display: none;
+        font-size: 20px;
+        @media(max-width:850px){
+            display: block;
+        }
+    }
+    #check{
+        display: none;
+        &:checked ~ .nav-links{
+            transform: translateX(0);
+        }
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        transition: 0.4s ease-in-out;
+        @media(max-width:850px){
+            position: fixed;
+            top: 90px;
+            left: 0;
+            width: 60%;
+            height: calc(100vh - 90px);
+            flex-direction: column;
+            justify-content: center;
+            transform: translateX(-100%);
+            background-color: #fff;
+        }
+        @media(max-width:450px){
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            gap: 32px;
+            @media(max-width:850px){
+                flex-direction: column;
+            }
+            li{
+                font-size: 15px;
+                line-height: 24px;
+                color: $grey;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+        button{
+            padding: 10px 25px;
+            background-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            line-height: 18px;
+            border: 1px solid $black;
+            color: $black;
+            border-radius: 4px;
+            &:hover{
+                color: #fff;
+                background-color: $black;
+            }
+        }
+    }
+}
